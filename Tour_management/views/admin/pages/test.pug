@@ -7,4 +7,9 @@ html
       )
   body
     h1= message
+    
+    ul
+      each item in tourList
+        li #{item.name} (Phương tiện: #{item.vehicle})
     script(src="/assets/js/script.js")
+
