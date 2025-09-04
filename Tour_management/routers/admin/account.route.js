@@ -38,5 +38,6 @@ router.post('/reset-password',
   authMiddleware.verifyToken, 
   accountController.resetPasswordPost);
 
+router.post('/logout', accountController.logoutPost);
 
 module.exports = router;

@@ -267,3 +267,12 @@ module.exports.resetPasswordPost = async (req, res) => {
     message: "Đổi mật khẩu thành công!"
   })
 };
+
+// Tinh nang dang xuat
+module.exports.logoutPost = async (req, res) => {
+  res.clearCookie("token");
+  res.json({
+    code: "success",
+    message: "Đăng xuất thành công!"
+  });
+};
